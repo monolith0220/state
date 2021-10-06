@@ -1,4 +1,6 @@
-class BookSearch extends React.Component {
+import React from "react";
+export class BookSearch extends React.Component {
+  // Class Componentで扱う初期値を定義するコンストラクタメソッド
   constructor(props) {
     super(props);
     this.state = {
@@ -10,6 +12,8 @@ class BookSearch extends React.Component {
       selectedItem: ""
     };
   }
+  // レンダリングを行うrender()メソッド
+  // 保持している状態に変更があった場合などに呼び出されます
   render() {
     return (
       <div>
